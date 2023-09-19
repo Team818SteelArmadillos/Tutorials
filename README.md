@@ -1,8 +1,4 @@
 # Tutorials
-Here lies the stuff to learn.
+This repository contains all the resources needed to be a part of 818's programming sub-team.
 
-Use it well, use it wisely.
-
-If something is wrong ... blame Jakob.
-
-GitHub Intro Document: https://docs.google.com/document/d/1uU1gNtdDuRJVeI40HWTaQS88XevwRci-JRUponZDlQw/edit?usp=sharing
+Students who plan on working on robot code are expected to have a strong understanding of the concepts and can apply the processes defined here.
