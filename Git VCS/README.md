@@ -7,11 +7,13 @@ There are two kinds of VCS’s – Centralized and Distributed.  The main differ
 
 ## Centralized
 ![Centralized view](Centralized.png)
+
 A centralized VCS works on the basis that there is exactly one repository of code to interact with.  This usually is a server somewhere on your company’s network.  The server might create backups of its repository, but make no mistake, that server is the only one you will likely ever work with.  Consequently, developers using a centralized system are entirely dependent on the server to be able to get work done (All hail the hypnoserver!).
 In general, developers might check out a copy of a version of code from the server.  This may also give them permission to make changes to those files and re-upload them to the server.  Work may be done on the developers computers, but everything must eventually come from and go to the server to be stored.  The server is the warden.  The server is the librarian.  The server is the historian.  The server is the weakest link in the chain.
 
 ## Distributed
 ![Distributed view](Distributed.png)
+
 A distributed VCS works on the basis that everyone has a copy of the repository.  This means that your local computer might house all the code history that is present on the server and possibly more.  Steve has the code and the history.  I have the code and the history.  So do you.  This reduces the dependency on a server but increases the importance of synchronization.
 In general, developers check out a version of code from themselves, make the changes on their own computers, save the new versions on their own computers, and then share those changes if they feel like it (note we at Casco require all official versions of code to be reproducible and stored in a redundant manner).   A server may be entirely optional if the Local Area Network is set up correctly. 
 
@@ -24,14 +26,23 @@ This way, redundancy is accomplished by simply having multiple developers clone 
 Git is a distributed version control system, not an insult.  This VCS was designed to accommodate the development of Linux and is still used today.  It is also one of the top choices for Open Source development of code.  The system encourages code branching and experimentation, allowing multiple versions of code with separate histories to exist at the same time in a logical manner.  This allows us to designate branches for specific roles.  For example, the master branch might be reserved for official release versions of code.  Git also uses a very small amount of hard drive space relative to the number of versions it may store.
 
 TL;DR for below {
+
     Repository: the data structure of your code, including a .git folder in the root directory
+
     Commit: a particular saved state of the repository, this includes all files and additions
+
     Branch: a means of separating various commits, having a unique history. This is primarily used for separating development and stable branches.
+
     Push: update the remote repository with your local changes
+
     Pull: update your local repository with the remote changes
+
     Clone: retrieving a local copy of a repository to modify
+
     Branch/Fork: duplicating a pre-existing repository to modify, and to compare against the original
+    
     Merge: combining various changes from different branches/commits/forks into a single history
+
 }
 
 
